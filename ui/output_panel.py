@@ -1,34 +1,46 @@
 """
 Output panel for the trade simulator UI.
 """
-from PyQt5.QtWidgets import (QWidget, QVBoxLayout, QHBoxLayout, QLabel, 
-                            QGroupBox, QFormLayout, QProgressBar)
-from PyQt5.QtCore import Qt, QTimer
+from PyQt5.QtWidgets import (QWidget, QVBoxLayout, QHBoxLayout, QLabel,
+                            QGroupBox, QFormLayout, QProgressBar, QPushButton)
+from PyQt5.QtCore import Qt, QTimer, pyqtSignal
 
 class OutputPanel(QWidget):
     """Output panel for the trade simulator UI."""
-    
+
+    # Signal emitted when reconnect button is clicked
+    reconnect_clicked = pyqtSignal()
+
     def __init__(self, parent=None):
         """Initialize the output panel."""
         super().__init__(parent)
         self.init_ui()
-        
+
         # Timer for updating latency
         self.latency_timer = QTimer()
         self.latency_timer.timeout.connect(self.update_latency)
         self.latency_timer.start(1000)  # Update every second
-    
+
+        # Connection status details
+        self.connection_details = {
+            'status': 'Disconnected',
+            'internet': False,
+            'vpn': False,
+            'last_message': None,
+            'reconnect_attempts': 0
+        }
+
     def init_ui(self):
         """Initialize the UI components."""
         # Main layout
         main_layout = QVBoxLayout()
         main_layout.setAlignment(Qt.AlignTop)
-        
+
         # Title
         title_label = QLabel("Output Parameters")
         title_label.setStyleSheet("font-size: 16px; font-weight: bold;")
         main_layout.addWidget(title_label)
-        
+
         # Slippage group
         slippage_group = QGroupBox("Expected Slippage")
         slippage_layout = QFormLayout()
@@ -38,7 +50,7 @@ class OutputPanel(QWidget):
         slippage_layout.addRow("Basis Points:", self.slippage_bps_label)
         slippage_group.setLayout(slippage_layout)
         main_layout.addWidget(slippage_group)
-        
+
         # Fees group
         fees_group = QGroupBox("Expected Fees")
         fees_layout = QFormLayout()
@@ -48,7 +60,7 @@ class OutputPanel(QWidget):
         fees_layout.addRow("Basis Points:", self.fees_bps_label)
         fees_group.setLayout(fees_layout)
         main_layout.addWidget(fees_group)
-        
+
         # Market impact group
         impact_group = QGroupBox("Expected Market Impact")
         impact_layout = QFormLayout()
@@ -62,7 +74,7 @@ class OutputPanel(QWidget):
         impact_layout.addRow("Permanent:", self.perm_impact_label)
         impact_group.setLayout(impact_layout)
         main_layout.addWidget(impact_group)
-        
+
         # Net cost group
         cost_group = QGroupBox("Net Cost")
         cost_layout = QFormLayout()
@@ -74,7 +86,7 @@ class OutputPanel(QWidget):
         cost_layout.addRow("Percentage:", self.cost_percent_label)
         cost_group.setLayout(cost_layout)
         main_layout.addWidget(cost_group)
-        
+
         # Maker/Taker proportion group
         proportion_group = QGroupBox("Maker/Taker Proportion")
         proportion_layout = QFormLayout()
@@ -84,7 +96,7 @@ class OutputPanel(QWidget):
         proportion_layout.addRow("Taker:", self.taker_label)
         proportion_group.setLayout(proportion_layout)
         main_layout.addWidget(proportion_group)
-        
+
         # Latency group
         latency_group = QGroupBox("Internal Latency")
         latency_layout = QFormLayout()
@@ -96,22 +108,45 @@ class OutputPanel(QWidget):
         latency_layout.addRow("Total Time:", self.total_label)
         latency_group.setLayout(latency_layout)
         main_layout.addWidget(latency_group)
-        
+
         # Connection status
         status_group = QGroupBox("Connection Status")
         status_layout = QVBoxLayout()
+
+        # Status label
         self.status_label = QLabel("Disconnected")
-        self.status_label.setStyleSheet("color: red; font-weight: bold;")
+        self.status_label.setStyleSheet("color: red; font-weight: bold; font-size: 14px;")
         status_layout.addWidget(self.status_label)
+
+        # Detailed status information
+        details_layout = QFormLayout()
+        self.internet_label = QLabel("No")
+        self.vpn_label = QLabel("No")
+        self.last_message_label = QLabel("Never")
+        self.reconnect_attempts_label = QLabel("0")
+
+        details_layout.addRow("Internet Connection:", self.internet_label)
+        details_layout.addRow("VPN Active:", self.vpn_label)
+        details_layout.addRow("Last Message:", self.last_message_label)
+        details_layout.addRow("Reconnect Attempts:", self.reconnect_attempts_label)
+
+        status_layout.addLayout(details_layout)
+
+        # Reconnect button
+        self.reconnect_button = QPushButton("Reconnect")
+        self.reconnect_button.setStyleSheet("background-color: #4CAF50; color: white; font-weight: bold; padding: 8px;")
+        self.reconnect_button.clicked.connect(self._on_reconnect_clicked)
+        status_layout.addWidget(self.reconnect_button)
+
         status_group.setLayout(status_layout)
         main_layout.addWidget(status_group)
-        
+
         self.setLayout(main_layout)
-    
+
     def update_output(self, output_data):
         """
         Update the output panel with new data.
-        
+
         Args:
             output_data: Dictionary with output parameters
         """
@@ -119,50 +154,89 @@ class OutputPanel(QWidget):
         slippage = output_data.get('slippage', {})
         self.slippage_value_label.setText(f"{slippage.get('slippage', 0):.4f} USD")
         self.slippage_bps_label.setText(f"{slippage.get('slippage_bps', 0):.2f} bps")
-        
+
         # Update fees
         fees = output_data.get('fees', {})
         self.fees_value_label.setText(f"{fees.get('total_fee', 0):.4f} USD")
         self.fees_bps_label.setText(f"{fees.get('effective_bps', 0):.2f} bps")
-        
+
         # Update market impact
         impact = output_data.get('market_impact', {})
         self.impact_value_label.setText(f"{impact.get('total_impact', 0):.4f} USD")
         self.impact_bps_label.setText(f"{impact.get('total_impact_bps', 0):.2f} bps")
         self.temp_impact_label.setText(f"{impact.get('temporary_impact', 0):.4f} USD")
         self.perm_impact_label.setText(f"{impact.get('permanent_impact', 0):.4f} USD")
-        
+
         # Update net cost
         cost = output_data.get('net_cost', {})
         self.cost_value_label.setText(f"{cost.get('value', 0):.4f} USD")
         self.cost_bps_label.setText(f"{cost.get('bps', 0):.2f} bps")
         self.cost_percent_label.setText(f"{cost.get('percent', 0):.4f}%")
-        
+
         # Update maker/taker proportion
         proportion = output_data.get('maker_taker', {})
         self.maker_label.setText(f"{proportion.get('maker_proportion', 0) * 100:.1f}%")
         self.taker_label.setText(f"{proportion.get('taker_proportion', 0) * 100:.1f}%")
-        
+
         # Update latency
         latency = output_data.get('latency', {})
         self.processing_label.setText(f"{latency.get('processing_time', 0):.2f} ms")
         self.ui_label.setText(f"{latency.get('ui_time', 0):.2f} ms")
         self.total_label.setText(f"{latency.get('total_time', 0):.2f} ms")
-    
-    def update_connection_status(self, connected):
+
+    def update_connection_status(self, status_info):
         """
         Update the connection status.
-        
+
         Args:
-            connected: Whether the WebSocket is connected
+            status_info: Dictionary with connection status information
         """
-        if connected:
-            self.status_label.setText("Connected")
-            self.status_label.setStyleSheet("color: green; font-weight: bold;")
+        # Update connection details
+        if isinstance(status_info, dict):
+            # Full status update
+            self.connection_details.update(status_info)
+        elif isinstance(status_info, str):
+            # Simple status update
+            self.connection_details['status'] = status_info
         else:
-            self.status_label.setText("Disconnected")
-            self.status_label.setStyleSheet("color: red; font-weight: bold;")
-    
+            # Boolean status (for backward compatibility)
+            self.connection_details['status'] = "Connected" if status_info else "Disconnected"
+
+        # Update status label
+        status = self.connection_details['status']
+        self.status_label.setText(status)
+
+        # Set color based on status
+        if status == "Connected":
+            self.status_label.setStyleSheet("color: green; font-weight: bold; font-size: 14px;")
+        elif status == "Connecting..." or status.startswith("Reconnecting"):
+            self.status_label.setStyleSheet("color: orange; font-weight: bold; font-size: 14px;")
+        elif status == "VPN Not Detected":
+            self.status_label.setStyleSheet("color: orange; font-weight: bold; font-size: 14px;")
+        else:
+            self.status_label.setStyleSheet("color: red; font-weight: bold; font-size: 14px;")
+
+        # Update detailed status information
+        self.internet_label.setText("Yes" if self.connection_details.get('internet', False) else "No")
+        self.vpn_label.setText("Yes" if self.connection_details.get('vpn', False) else "No")
+
+        # Update last message time
+        last_message = self.connection_details.get('last_message')
+        if last_message:
+            from datetime import datetime
+            time_str = datetime.fromtimestamp(last_message).strftime('%H:%M:%S')
+            self.last_message_label.setText(time_str)
+        else:
+            self.last_message_label.setText("Never")
+
+        # Update reconnect attempts
+        reconnect_attempts = self.connection_details.get('reconnect_attempts', 0)
+        self.reconnect_attempts_label.setText(str(reconnect_attempts))
+
+    def _on_reconnect_clicked(self):
+        """Handle reconnect button click."""
+        self.reconnect_clicked.emit()
+
     def update_latency(self):
         """Update the latency display with random values for testing."""
         # This method is just for testing UI updates

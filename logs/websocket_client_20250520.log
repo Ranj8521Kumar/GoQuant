@@ -1,0 +1,154 @@
+2025-05-20 12:01:55,320 - websocket_client - INFO - Connecting to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:01:56,837 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:02:37,029 - websocket_client - WARNING - Connection closed, reconnecting...
+2025-05-20 12:02:37,029 - websocket_client - INFO - Reconnecting in 5 seconds...
+2025-05-20 12:02:42,843 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:04:28,875 - websocket_client - INFO - Connecting to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:04:30,252 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:05:10,454 - websocket_client - WARNING - Connection closed, reconnecting...
+2025-05-20 12:05:10,456 - websocket_client - INFO - Reconnecting in 5 seconds...
+2025-05-20 12:05:16,248 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:05:56,441 - websocket_client - WARNING - Connection closed, reconnecting...
+2025-05-20 12:05:56,441 - websocket_client - INFO - Reconnecting in 5 seconds...
+2025-05-20 12:06:02,715 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:06:42,913 - websocket_client - WARNING - Connection closed, reconnecting...
+2025-05-20 12:06:42,914 - websocket_client - INFO - Reconnecting in 5 seconds...
+2025-05-20 12:06:48,761 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:07:28,957 - websocket_client - WARNING - Connection closed, reconnecting...
+2025-05-20 12:07:28,958 - websocket_client - INFO - Reconnecting in 5 seconds...
+2025-05-20 12:07:34,777 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:08:14,985 - websocket_client - WARNING - Connection closed, reconnecting...
+2025-05-20 12:08:14,986 - websocket_client - INFO - Reconnecting in 5 seconds...
+2025-05-20 12:08:21,030 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:09:01,241 - websocket_client - WARNING - Connection closed, reconnecting...
+2025-05-20 12:09:01,242 - websocket_client - INFO - Reconnecting in 5 seconds...
+2025-05-20 12:09:07,047 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:09:47,262 - websocket_client - WARNING - Connection closed, reconnecting...
+2025-05-20 12:09:47,263 - websocket_client - INFO - Reconnecting in 5 seconds...
+2025-05-20 12:09:53,106 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:10:33,296 - websocket_client - WARNING - Connection closed, reconnecting...
+2025-05-20 12:10:33,297 - websocket_client - INFO - Reconnecting in 5 seconds...
+2025-05-20 12:10:39,139 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:11:19,343 - websocket_client - WARNING - Connection closed, reconnecting...
+2025-05-20 12:11:19,344 - websocket_client - INFO - Reconnecting in 5 seconds...
+2025-05-20 12:11:25,215 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:12:05,397 - websocket_client - WARNING - Connection closed, reconnecting...
+2025-05-20 12:12:05,398 - websocket_client - INFO - Reconnecting in 5 seconds...
+2025-05-20 12:12:11,290 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:18:51,768 - websocket_client - INFO - Connecting to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:18:52,273 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:18:52,342 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:18:52,709 - websocket_client - WARNING - VPN not detected, connection may fail
+2025-05-20 12:18:54,350 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:18:58,384 - websocket_client - INFO - Stopping WebSocket client
+2025-05-20 12:18:58,389 - websocket_client - INFO - Connecting to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:18:58,730 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:18:58,825 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:18:59,086 - websocket_client - WARNING - VPN not detected, connection may fail
+2025-05-20 12:19:00,566 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:19:22,166 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:20:54,597 - websocket_client - INFO - Connecting to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:20:55,000 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:20:55,009 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:20:55,366 - websocket_client - WARNING - VPN not detected, connection may fail
+2025-05-20 12:20:57,137 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:21:25,794 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:21:31,163 - websocket_client - INFO - Stopping WebSocket client
+2025-05-20 12:21:31,166 - websocket_client - INFO - Connecting to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:21:31,522 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:21:31,572 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:21:31,947 - websocket_client - WARNING - VPN not detected, connection may fail
+2025-05-20 12:21:33,473 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:21:56,607 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:22:02,402 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:22:08,193 - websocket_client - INFO - Stopping WebSocket client
+2025-05-20 12:22:08,198 - websocket_client - INFO - Connecting to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:22:08,531 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:22:08,588 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:22:08,899 - websocket_client - WARNING - VPN not detected, connection may fail
+2025-05-20 12:22:10,606 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:22:27,518 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:22:33,234 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:22:39,331 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:22:51,272 - websocket_client - WARNING - Connection closed, reconnecting...
+2025-05-20 12:22:51,652 - websocket_client - INFO - Reconnecting in 5 seconds...
+2025-05-20 12:22:58,187 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:22:58,308 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:23:04,101 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:23:10,075 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:23:29,075 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:23:34,916 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:23:38,834 - websocket_client - WARNING - Connection closed, reconnecting...
+2025-05-20 12:23:39,249 - websocket_client - INFO - Reconnecting in 5 seconds...
+2025-05-20 12:23:40,885 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:23:45,974 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:23:59,887 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:24:05,755 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:24:11,644 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:24:26,551 - websocket_client - WARNING - Connection closed, reconnecting...
+2025-05-20 12:24:27,026 - websocket_client - INFO - Reconnecting in 5 seconds...
+2025-05-20 12:24:31,439 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:24:33,559 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:24:36,591 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:24:42,489 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:25:01,232 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:25:07,363 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:25:13,416 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:25:14,134 - websocket_client - WARNING - Connection closed, reconnecting...
+2025-05-20 12:25:14,497 - websocket_client - INFO - Reconnecting in 5 seconds...
+2025-05-20 12:25:21,201 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:25:31,987 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:25:38,230 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:25:44,298 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:26:01,759 - websocket_client - WARNING - Connection closed, reconnecting...
+2025-05-20 12:26:02,150 - websocket_client - INFO - Reconnecting in 5 seconds...
+2025-05-20 12:26:02,689 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:26:08,707 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:26:08,961 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:26:15,818 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:26:33,587 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:26:39,704 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:26:45,739 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:26:49,231 - websocket_client - WARNING - Connection closed, reconnecting...
+2025-05-20 12:26:49,571 - websocket_client - INFO - Reconnecting in 5 seconds...
+2025-05-20 12:26:56,233 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:27:04,384 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:27:10,521 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:27:16,524 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:27:35,182 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:27:36,837 - websocket_client - WARNING - Connection closed, reconnecting...
+2025-05-20 12:27:37,285 - websocket_client - INFO - Reconnecting in 5 seconds...
+2025-05-20 12:27:41,393 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:27:43,854 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:27:47,294 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:28:05,973 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:28:12,185 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:28:18,136 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:28:24,453 - websocket_client - WARNING - Connection closed, reconnecting...
+2025-05-20 12:28:24,879 - websocket_client - INFO - Reconnecting in 5 seconds...
+2025-05-20 12:28:31,454 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:28:36,866 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:28:43,249 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:28:49,022 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:29:07,718 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:29:12,096 - websocket_client - WARNING - Connection closed, reconnecting...
+2025-05-20 12:29:12,463 - websocket_client - INFO - Reconnecting in 5 seconds...
+2025-05-20 12:29:13,402 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:29:19,003 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:29:19,887 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:29:35,213 - websocket_client - INFO - Stopping WebSocket client
+2025-05-20 12:29:35,218 - websocket_client - INFO - Connecting to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:29:35,578 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:29:35,581 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:29:35,922 - websocket_client - WARNING - VPN not detected, connection may fail
+2025-05-20 12:29:37,711 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:29:38,521 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:29:41,423 - websocket_client - INFO - Stopping WebSocket client
+2025-05-20 12:29:41,426 - websocket_client - INFO - Connecting to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:29:41,774 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:29:41,873 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:29:42,303 - websocket_client - WARNING - VPN not detected, connection may fail
+2025-05-20 12:29:43,164 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:29:43,881 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-20 12:29:50,698 - websocket_client - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:30:02,311 - websocket_client - INFO - Stopping WebSocket client
