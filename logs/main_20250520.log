@@ -191,3 +191,269 @@
 2025-05-20 12:30:00,524 - main - WARNING - No orderbook data available for OKX_ETH-USDT
 2025-05-20 12:30:00,741 - main - WARNING - No orderbook data available for OKX_ETH-USDT
 2025-05-20 12:30:02,320 - main - INFO - Trade simulator stopped
+2025-05-20 12:44:50,673 - main - INFO - Starting trade simulator
+2025-05-20 12:44:51,941 - main - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:44:52,027 - main - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:44:52,703 - main - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:44:52,738 - main - INFO - Connection status changed: Connecting...
+2025-05-20 12:44:54,670 - main - INFO - Connection status changed: Connected
+2025-05-20 12:44:57,768 - main - INFO - Reconnecting WebSocket client
+2025-05-20 12:44:58,386 - main - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:44:58,550 - main - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:44:59,154 - main - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:44:59,744 - main - INFO - Connection status changed: Connecting...
+2025-05-20 12:45:02,065 - main - INFO - Connection status changed: Connected
+2025-05-20 12:45:22,354 - main - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:45:29,580 - main - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:45:43,078 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 12:45:43,660 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 12:45:49,224 - main - INFO - Connection status changed: Connecting...
+2025-05-20 12:45:51,211 - main - INFO - Connection status changed: Connected
+2025-05-20 12:45:52,685 - main - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:45:58,741 - main - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:46:23,511 - main - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:46:28,880 - main - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:46:32,386 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 12:46:33,034 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 12:46:38,630 - main - INFO - Connection status changed: Connecting...
+2025-05-20 12:46:41,727 - main - INFO - Connection status changed: Connected
+2025-05-20 12:46:53,776 - main - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:46:59,770 - main - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:47:23,088 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 12:47:23,709 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 12:47:23,969 - main - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:47:29,274 - main - INFO - Connection status changed: Connecting...
+2025-05-20 12:47:29,981 - main - INFO - Connection status changed: VPN Not Detected
+2025-05-20 12:47:31,778 - main - INFO - Connection status changed: Connected
+2025-05-20 12:48:47,824 - main - INFO - Starting trade simulator
+2025-05-20 12:48:48,552 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:48:48,552 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:48:48,570 - main - INFO - Connection status changed: Connecting...
+2025-05-20 12:48:50,153 - main - INFO - Connection status changed: Connected
+2025-05-20 12:49:11,022 - main - INFO - Reconnecting WebSocket client
+2025-05-20 12:49:11,029 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:49:11,039 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:49:11,056 - main - INFO - Connection status changed: Connecting...
+2025-05-20 12:49:12,153 - main - INFO - Connection status changed: Connected
+2025-05-20 12:49:18,601 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:49:27,725 - main - INFO - Reconnecting WebSocket client
+2025-05-20 12:49:27,752 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:49:27,753 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:49:27,755 - main - INFO - Connection status changed: Connecting...
+2025-05-20 12:49:28,707 - main - INFO - Reconnecting WebSocket client
+2025-05-20 12:49:28,716 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:49:28,738 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:49:28,747 - main - INFO - Connection status changed: Connecting...
+2025-05-20 12:49:28,997 - main - INFO - Connection status changed: Connected
+2025-05-20 12:49:29,779 - main - INFO - Connection status changed: Connected
+2025-05-20 12:49:31,489 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 12:49:31,532 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 12:49:36,552 - main - INFO - Connection status changed: Connecting...
+2025-05-20 12:49:37,623 - main - INFO - Connection status changed: Connected
+2025-05-20 12:49:39,118 - main - WARNING - No orderbook data available for OKX_BTC-USDT
+2025-05-20 12:49:41,111 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:49:48,695 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:49:57,873 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:49:58,162 - main - INFO - Trade simulator stopped
+2025-05-20 12:50:02,373 - main - INFO - Starting trade simulator
+2025-05-20 12:50:02,805 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:50:02,854 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:50:02,887 - main - INFO - Connection status changed: Connecting...
+2025-05-20 12:50:03,905 - main - INFO - Connection status changed: Connected
+2025-05-20 12:50:32,930 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:50:44,170 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 12:50:44,265 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 12:50:49,314 - main - INFO - Connection status changed: Connecting...
+2025-05-20 12:50:50,157 - main - INFO - Connection status changed: Connected
+2025-05-20 12:51:03,036 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:51:30,417 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 12:51:30,478 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 12:51:33,206 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:51:35,547 - main - INFO - Connection status changed: Connecting...
+2025-05-20 12:51:36,460 - main - INFO - Connection status changed: Connected
+2025-05-20 12:52:03,413 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:52:16,726 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 12:52:16,775 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 12:52:21,821 - main - INFO - Connection status changed: Connecting...
+2025-05-20 12:52:22,626 - main - INFO - Connection status changed: Connected
+2025-05-20 12:52:33,588 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:53:02,852 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 12:53:02,920 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 12:53:03,728 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:53:08,003 - main - INFO - Connection status changed: Connecting...
+2025-05-20 12:53:09,361 - main - INFO - Connection status changed: Connected
+2025-05-20 12:53:33,860 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:53:49,596 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 12:53:49,702 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 12:54:17,540 - main - INFO - Starting trade simulator
+2025-05-20 12:54:18,401 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:54:18,404 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:54:18,513 - main - INFO - Connection status changed: Connecting...
+2025-05-20 12:54:19,592 - main - INFO - Connection status changed: Connected
+2025-05-20 12:54:29,200 - main - WARNING - No orderbook data available for OKX_BTC-USDT
+2025-05-20 12:54:48,585 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:54:56,260 - main - INFO - Reconnecting WebSocket client
+2025-05-20 12:54:56,348 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:54:56,349 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:54:56,435 - main - INFO - Connection status changed: Connecting...
+2025-05-20 12:54:57,342 - main - INFO - Reconnecting WebSocket client
+2025-05-20 12:54:57,377 - main - INFO - Connection status changed: Connected
+2025-05-20 12:54:57,429 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:54:57,443 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:54:57,519 - main - INFO - Connection status changed: Connecting...
+2025-05-20 12:54:58,185 - main - INFO - Reconnecting WebSocket client
+2025-05-20 12:54:58,269 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:54:58,277 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:54:58,349 - main - INFO - Connection status changed: Connecting...
+2025-05-20 12:54:58,440 - main - INFO - Connection status changed: Connected
+2025-05-20 12:54:59,221 - main - INFO - Connection status changed: Connected
+2025-05-20 12:55:01,506 - main - INFO - Reconnecting WebSocket client
+2025-05-20 12:55:01,604 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:55:01,605 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:55:01,696 - main - INFO - Connection status changed: Connecting...
+2025-05-20 12:55:02,559 - main - INFO - Connection status changed: Connected
+2025-05-20 12:56:19,364 - main - INFO - Starting trade simulator
+2025-05-20 12:56:19,845 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:56:19,895 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:56:19,957 - main - INFO - Connection status changed: Connecting...
+2025-05-20 12:56:20,954 - main - INFO - Connection status changed: Connected
+2025-05-20 12:56:23,934 - main - WARNING - No orderbook data available for OKX_BTC-USDT
+2025-05-20 12:56:26,498 - main - WARNING - No orderbook data available for OKX_BTC-USDT
+2025-05-20 12:56:28,570 - main - INFO - Reconnecting WebSocket client
+2025-05-20 12:56:28,647 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:56:28,664 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:56:28,722 - main - INFO - Connection status changed: Connecting...
+2025-05-20 12:56:29,453 - main - INFO - Connection status changed: Connected
+2025-05-20 12:56:55,502 - main - INFO - Starting trade simulator
+2025-05-20 12:56:55,976 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:56:56,967 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:56:57,023 - main - INFO - Connection status changed: Connecting...
+2025-05-20 12:56:57,925 - main - INFO - Connection status changed: Connected
+2025-05-20 12:57:19,404 - main - WARNING - No orderbook data available for OKX_BTC-USDT
+2025-05-20 12:57:26,187 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:57:38,170 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 12:57:38,242 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 12:57:43,354 - main - INFO - Connection status changed: Connecting...
+2025-05-20 12:57:44,289 - main - INFO - Connection status changed: Connected
+2025-05-20 12:57:56,289 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:58:24,548 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 12:58:24,629 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 12:58:26,442 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:58:29,675 - main - INFO - Connection status changed: Connecting...
+2025-05-20 12:58:30,566 - main - INFO - Connection status changed: Connected
+2025-05-20 12:58:56,540 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:59:10,799 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 12:59:10,843 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 12:59:15,913 - main - INFO - Connection status changed: Connecting...
+2025-05-20 12:59:16,871 - main - INFO - Connection status changed: Connected
+2025-05-20 12:59:26,710 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:59:56,824 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 12:59:57,115 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 12:59:57,186 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 13:00:02,229 - main - INFO - Connection status changed: Connecting...
+2025-05-20 13:00:03,031 - main - INFO - Connection status changed: Connected
+2025-05-20 13:00:27,070 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:00:43,264 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 13:00:43,299 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 13:00:48,345 - main - INFO - Connection status changed: Connecting...
+2025-05-20 13:00:49,211 - main - INFO - Connection status changed: Connected
+2025-05-20 13:00:57,199 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:01:27,374 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:01:29,421 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 13:01:29,454 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 13:01:34,528 - main - INFO - Connection status changed: Connecting...
+2025-05-20 13:01:35,436 - main - INFO - Connection status changed: Connected
+2025-05-20 13:01:57,469 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:02:01,680 - main - INFO - Starting trade simulator
+2025-05-20 13:02:02,306 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:02:02,308 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:02:02,502 - main - INFO - Connection status changed: Connecting...
+2025-05-20 13:02:03,609 - main - INFO - Connection status changed: Connected
+2025-05-20 13:02:12,717 - main - WARNING - No orderbook data available for OKX_BTC-USDT
+2025-05-20 13:02:15,681 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 13:02:15,733 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 13:02:20,812 - main - INFO - Connection status changed: Connecting...
+2025-05-20 13:02:21,713 - main - INFO - Connection status changed: Connected
+2025-05-20 13:02:27,638 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:02:32,605 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:02:43,905 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 13:02:44,020 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 13:02:49,099 - main - INFO - Connection status changed: Connecting...
+2025-05-20 13:02:50,133 - main - INFO - Connection status changed: Connected
+2025-05-20 13:02:57,758 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:03:02,006 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 13:03:02,037 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 13:03:02,874 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:03:07,088 - main - INFO - Connection status changed: Connecting...
+2025-05-20 13:03:08,328 - main - INFO - Connection status changed: Connected
+2025-05-20 13:03:16,731 - main - INFO - Reconnecting WebSocket client
+2025-05-20 13:03:16,839 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:03:16,849 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:03:16,970 - main - INFO - Connection status changed: Connecting...
+2025-05-20 13:03:17,826 - main - INFO - Connection status changed: Connected
+2025-05-20 13:03:27,897 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:03:33,350 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:03:47,122 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:03:48,572 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 13:03:48,632 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 13:03:53,712 - main - INFO - Connection status changed: Connecting...
+2025-05-20 13:03:54,639 - main - INFO - Connection status changed: Connected
+2025-05-20 13:03:58,137 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 13:03:58,228 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 13:03:58,229 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:04:03,327 - main - INFO - Connection status changed: Connecting...
+2025-05-20 13:04:03,669 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:04:04,213 - main - INFO - Connection status changed: Connected
+2025-05-20 13:04:17,463 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:04:28,366 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:04:33,938 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:04:34,880 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 13:04:34,976 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 13:04:40,060 - main - INFO - Connection status changed: Connecting...
+2025-05-20 13:04:40,940 - main - INFO - Connection status changed: Connected
+2025-05-20 13:04:44,508 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 13:04:44,584 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 13:04:47,700 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:04:49,694 - main - INFO - Connection status changed: Connecting...
+2025-05-20 13:04:50,532 - main - INFO - Connection status changed: Connected
+2025-05-20 13:04:58,517 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:05:04,145 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:05:17,919 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:05:21,229 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 13:05:21,281 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 13:05:26,337 - main - INFO - Connection status changed: Connecting...
+2025-05-20 13:05:27,255 - main - INFO - Connection status changed: Connected
+2025-05-20 13:05:28,730 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:05:58,900 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:05:59,698 - main - INFO - Reconnecting WebSocket client
+2025-05-20 13:05:59,732 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:05:59,757 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:05:59,846 - main - INFO - Connection status changed: Connecting...
+2025-05-20 13:06:00,894 - main - INFO - Connection status changed: Connected
+2025-05-20 13:06:42,096 - main - INFO - Starting trade simulator
+2025-05-20 13:06:42,703 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:06:42,712 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:06:42,802 - main - INFO - Connection status changed: Connecting...
+2025-05-20 13:06:44,490 - main - INFO - Connection status changed: Connected
+2025-05-20 13:06:45,445 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 13:06:45,516 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 13:06:50,591 - main - INFO - Connection status changed: Connecting...
+2025-05-20 13:06:51,792 - main - INFO - Connection status changed: Connected
+2025-05-20 13:07:12,907 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:07:32,186 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 13:07:32,274 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 13:07:37,351 - main - INFO - Connection status changed: Connecting...
+2025-05-20 13:07:38,567 - main - INFO - Connection status changed: Connected
+2025-05-20 13:07:43,065 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:08:13,215 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:08:15,999 - main - INFO - Reconnecting WebSocket client
+2025-05-20 13:08:16,359 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:08:16,361 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:08:16,443 - main - INFO - Connection status changed: Connecting...
+2025-05-20 13:08:17,895 - main - INFO - Connection status changed: Connected
+2025-05-20 13:08:19,078 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 13:08:19,147 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 13:08:24,210 - main - INFO - Connection status changed: Connecting...
+2025-05-20 13:08:26,659 - main - INFO - Connection status changed: Connected
+2025-05-20 13:08:43,404 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:08:46,608 - main - INFO - Connection status changed: VPN Connected

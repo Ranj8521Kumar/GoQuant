@@ -1,12 +1,22 @@
 """
 WebSocket client for connecting to L2 orderbook data stream.
+
+This module provides functionality to:
+1. Connect to WebSocket endpoints that stream L2 orderbook data
+2. Process and parse the orderbook data into structured format
+3. Calculate derived metrics like mid price, spread, and liquidity
+4. Monitor connection status and handle reconnection
+5. Measure processing performance
+
+The module contains two main classes:
+- OrderbookData: Processes and analyzes orderbook data
+- WebSocketClient: Manages WebSocket connections and message handling
 """
 import json
 import asyncio
-import logging
 import time
 from datetime import datetime
-from typing import Dict, List, Tuple, Callable, Optional
+from typing import List, Tuple, Callable
 
 import websockets
 import pandas as pd
@@ -18,7 +28,18 @@ from utils.connection_manager import ConnectionManager
 logger = setup_logger("websocket_client")
 
 class OrderbookData:
-    """Class to store and process orderbook data."""
+    """
+    Class to store and process orderbook data.
+
+    This class takes raw L2 orderbook data (asks and bids with price and quantity)
+    and provides methods to:
+    - Calculate mid price, spread, and other market metrics
+    - Analyze liquidity at different price levels
+    - Estimate execution price for a given quantity
+    - Calculate cumulative quantities and notional values
+
+    The data is stored in pandas DataFrames for efficient processing and analysis.
+    """
 
     def __init__(self, exchange: str, symbol: str, timestamp: str,
                  asks: List[List[str]], bids: List[List[str]]):
@@ -127,7 +148,19 @@ class OrderbookData:
 
 
 class WebSocketClient:
-    """Client for connecting to WebSocket endpoints and processing orderbook data."""
+    """
+    Client for connecting to WebSocket endpoints and processing orderbook data.
+
+    This class provides functionality to:
+    - Establish and maintain WebSocket connections to orderbook data streams
+    - Process incoming messages and convert them to OrderbookData objects
+    - Monitor connection status and handle reconnection
+    - Track performance metrics like processing time
+    - Provide callbacks for data and status updates
+
+    The client uses asyncio for asynchronous processing and can be run in a
+    separate thread to avoid blocking the main application.
+    """
 
     def __init__(self, url: str, callback: Callable[[OrderbookData], None],
                  status_callback: Callable[[str], None] = None):
@@ -161,7 +194,19 @@ class WebSocketClient:
         )
 
     async def connect(self):
-        """Connect to the WebSocket endpoint and start processing messages."""
+        """
+        Connect to the WebSocket endpoint and start processing messages.
+
+        This method:
+        1. Checks internet and VPN connectivity before attempting connection
+        2. Establishes a WebSocket connection to the specified URL
+        3. Processes incoming messages in real-time
+        4. Handles connection errors and reconnection
+        5. Updates connection status through callbacks
+
+        The method runs in an infinite loop until self.running is set to False,
+        attempting to reconnect if the connection is lost.
+        """
         logger.info(f"Connecting to {self.url}")
         self.running = True
 
@@ -173,10 +218,13 @@ class WebSocketClient:
                 self.status_callback("No Internet Connection")
             return
 
+        # Check if VPN is active - this is important for accessing certain exchanges
         if not connection_status['vpn_active']:
-            logger.warning("VPN not detected, connection may fail")
+            logger.warning("VPN not detected, connection to exchange may fail")
             if self.status_callback:
                 self.status_callback("VPN Not Detected")
+            # We'll continue anyway, but warn the user that VPN is required
+            # The connection might still work for testing purposes or if VPN detection failed
 
         while self.running:
             try:

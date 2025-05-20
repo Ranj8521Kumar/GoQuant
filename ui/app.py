@@ -1,11 +1,21 @@
 """
 Main UI application for the trade simulator.
+
+This module provides the main UI components for the trade simulator application:
+1. SimulatorApp: Main window that contains the input and output panels
+2. Integration with the trade simulator backend
+3. Performance tracking for UI updates
+4. Connection status handling and display
+5. Callback management for simulation and reconnection
+
+The UI is built using PyQt5 and follows a two-panel design:
+- Left panel: Input parameters for trade simulation
+- Right panel: Output parameters showing simulation results and connection status
 """
 import sys
 import time
-from PyQt5.QtWidgets import (QApplication, QMainWindow, QWidget, QHBoxLayout,
-                            QVBoxLayout, QLabel, QStatusBar)
-from PyQt5.QtCore import Qt, QThread, pyqtSignal, QTimer
+from PyQt5.QtWidgets import (QApplication, QMainWindow, QWidget, QHBoxLayout, QStatusBar)
+from PyQt5.QtCore import QTimer
 
 from ui.input_panel import InputPanel
 from ui.output_panel import OutputPanel
@@ -15,7 +25,24 @@ from utils.performance import performance_tracker
 logger = setup_logger("ui_app")
 
 class SimulatorApp(QMainWindow):
-    """Main window for the trade simulator application."""
+    """
+    Main window for the trade simulator application.
+
+    This class provides:
+    - The main application window with input and output panels
+    - Handling of input parameter changes
+    - Simulation of trades (dummy implementation or via callback)
+    - UI updates with simulation results
+    - Connection status handling and display
+    - Performance tracking for UI updates
+
+    The window is divided into two main panels:
+    - Left panel (InputPanel): For setting simulation parameters
+    - Right panel (OutputPanel): For displaying simulation results
+
+    The class also provides callback mechanisms to connect the UI to the
+    backend simulation logic and WebSocket connection management.
+    """
 
     def __init__(self):
         """Initialize the main window."""
@@ -53,7 +80,6 @@ class SimulatorApp(QMainWindow):
 
         # Output panel
         self.output_panel = OutputPanel()
-        self.output_panel.reconnect_clicked.connect(self.on_reconnect_clicked)
         main_layout.addWidget(self.output_panel, 2)
 
         central_widget.setLayout(main_layout)

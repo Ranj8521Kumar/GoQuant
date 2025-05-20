@@ -1,5 +1,16 @@
 """
 Main entry point for the trade simulator application.
+
+This module serves as the entry point for the trade simulator application and provides:
+1. The TradeSimulator class that coordinates all components of the system
+2. WebSocket connection management for real-time market data
+3. Integration of various models (market impact, slippage, fees)
+4. Connection to the UI components
+5. Main application loop and initialization
+
+The application connects to WebSocket endpoints that stream L2 orderbook data,
+processes this data in real-time, and uses it to simulate trades with various
+parameters to estimate transaction costs and market impact.
 """
 import asyncio
 import threading
@@ -25,7 +36,25 @@ import config
 logger = setup_logger("main")
 
 class TradeSimulator:
-    """Main class for the trade simulator."""
+    """
+    Main class for the trade simulator.
+
+    This class coordinates all components of the trade simulator:
+    - WebSocket connections to market data streams
+    - Processing of orderbook data
+    - Market impact modeling (Almgren-Chriss model)
+    - Slippage estimation
+    - Fee calculation
+    - Maker/Taker proportion prediction
+    - Connection status monitoring
+
+    It provides methods to:
+    - Start and manage WebSocket connections
+    - Process orderbook updates
+    - Simulate trades with various parameters
+    - Calculate transaction costs and market impact
+    - Monitor and report connection status
+    """
 
     def __init__(self, connection_status_callback=None):
         """
@@ -142,11 +171,35 @@ class TradeSimulator:
         """
         Simulate a trade with the given parameters.
 
+        This method:
+        1. Extracts trade parameters (exchange, asset, order type, quantity, etc.)
+        2. Retrieves current orderbook data if available
+        3. Calculates maker/taker proportion based on order type and market conditions
+        4. Estimates fees based on exchange fee tier and maker/taker proportion
+        5. Calculates market impact using the Almgren-Chriss model
+        6. Estimates slippage based on quantity, volatility, and spread
+        7. Computes the total transaction cost (slippage + fees + market impact)
+        8. Measures and reports latency metrics
+
         Args:
-            params: Dictionary with trade parameters
+            params: Dictionary with trade parameters including:
+                - exchange: Exchange name (e.g., 'OKX')
+                - asset: Trading pair (e.g., 'BTC-USDT')
+                - order_type: Type of order (e.g., 'Market')
+                - quantity: Trade size in USD
+                - volatility: Asset volatility as decimal
+                - fee_tier: Exchange fee tier (e.g., 'VIP0')
 
         Returns:
-            Dictionary with simulation results
+            Dictionary with simulation results including:
+                - slippage: Estimated slippage
+                - fees: Fee calculations
+                - market_impact: Market impact estimates
+                - maker_taker: Maker/taker proportion
+                - net_cost: Total transaction cost
+                - latency: Performance metrics
+                - price: Current price
+                - spread_bps: Current spread in basis points
         """
         # Extract parameters
         exchange = params.get('exchange', 'OKX')
@@ -255,7 +308,20 @@ class TradeSimulator:
 
 
 def main():
-    """Main entry point."""
+    """
+    Main entry point for the application.
+
+    This function:
+    1. Initializes the Qt application
+    2. Creates the main UI window (SimulatorApp)
+    3. Creates the TradeSimulator instance
+    4. Connects UI signals to simulator methods
+    5. Runs the application event loop
+    6. Handles cleanup on application exit
+
+    The function sets up proper signal handling to ensure clean shutdown
+    even when interrupted by keyboard input (Ctrl+C).
+    """
     logger.info("Starting trade simulator")
 
     # Create QApplication instance

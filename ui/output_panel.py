@@ -1,15 +1,37 @@
 """
 Output panel for the trade simulator UI.
+
+This module provides the output panel component for the trade simulator UI:
+1. Displays simulation results (slippage, fees, market impact, etc.)
+2. Updates in real-time with new simulation results
+3. Tracks and displays performance metrics
+
+The panel is organized into several sections:
+- Expected Slippage
+- Expected Fees
+- Expected Market Impact
+- Net Cost
+- Maker/Taker Proportion
+- Internal Latency
 """
-from PyQt5.QtWidgets import (QWidget, QVBoxLayout, QHBoxLayout, QLabel,
-                            QGroupBox, QFormLayout, QProgressBar, QPushButton)
-from PyQt5.QtCore import Qt, QTimer, pyqtSignal
+from PyQt5.QtWidgets import (QWidget, QVBoxLayout, QLabel,
+                            QGroupBox, QFormLayout)
+from PyQt5.QtCore import Qt, QTimer
 
 class OutputPanel(QWidget):
-    """Output panel for the trade simulator UI."""
+    """
+    Output panel for the trade simulator UI.
 
-    # Signal emitted when reconnect button is clicked
-    reconnect_clicked = pyqtSignal()
+    This class provides:
+    - Display of simulation results (slippage, fees, market impact, etc.)
+    - Real-time updates of simulation results
+    - Performance metrics display
+
+    The UI is organized into several sections, each displaying a specific
+    aspect of the simulation results.
+    """
+
+
 
     def __init__(self, parent=None):
         """Initialize the output panel."""
@@ -109,37 +131,7 @@ class OutputPanel(QWidget):
         latency_group.setLayout(latency_layout)
         main_layout.addWidget(latency_group)
 
-        # Connection status
-        status_group = QGroupBox("Connection Status")
-        status_layout = QVBoxLayout()
 
-        # Status label
-        self.status_label = QLabel("Disconnected")
-        self.status_label.setStyleSheet("color: red; font-weight: bold; font-size: 14px;")
-        status_layout.addWidget(self.status_label)
-
-        # Detailed status information
-        details_layout = QFormLayout()
-        self.internet_label = QLabel("No")
-        self.vpn_label = QLabel("No")
-        self.last_message_label = QLabel("Never")
-        self.reconnect_attempts_label = QLabel("0")
-
-        details_layout.addRow("Internet Connection:", self.internet_label)
-        details_layout.addRow("VPN Active:", self.vpn_label)
-        details_layout.addRow("Last Message:", self.last_message_label)
-        details_layout.addRow("Reconnect Attempts:", self.reconnect_attempts_label)
-
-        status_layout.addLayout(details_layout)
-
-        # Reconnect button
-        self.reconnect_button = QPushButton("Reconnect")
-        self.reconnect_button.setStyleSheet("background-color: #4CAF50; color: white; font-weight: bold; padding: 8px;")
-        self.reconnect_button.clicked.connect(self._on_reconnect_clicked)
-        status_layout.addWidget(self.reconnect_button)
-
-        status_group.setLayout(status_layout)
-        main_layout.addWidget(status_group)
 
         self.setLayout(main_layout)
 
@@ -186,10 +178,18 @@ class OutputPanel(QWidget):
 
     def update_connection_status(self, status_info):
         """
-        Update the connection status.
+        Update the internal connection status information.
+
+        This method only updates the internal connection details dictionary
+        without updating any UI elements, as the connection status UI has been removed.
+
+        The method accepts different types of status information:
+        - Dictionary: Full status update with all details
+        - String: Simple status update (just the status text)
+        - Boolean: Legacy format (True for connected, False for disconnected)
 
         Args:
-            status_info: Dictionary with connection status information
+            status_info: Connection status information in one of the supported formats
         """
         # Update connection details
         if isinstance(status_info, dict):
@@ -202,40 +202,7 @@ class OutputPanel(QWidget):
             # Boolean status (for backward compatibility)
             self.connection_details['status'] = "Connected" if status_info else "Disconnected"
 
-        # Update status label
-        status = self.connection_details['status']
-        self.status_label.setText(status)
 
-        # Set color based on status
-        if status == "Connected":
-            self.status_label.setStyleSheet("color: green; font-weight: bold; font-size: 14px;")
-        elif status == "Connecting..." or status.startswith("Reconnecting"):
-            self.status_label.setStyleSheet("color: orange; font-weight: bold; font-size: 14px;")
-        elif status == "VPN Not Detected":
-            self.status_label.setStyleSheet("color: orange; font-weight: bold; font-size: 14px;")
-        else:
-            self.status_label.setStyleSheet("color: red; font-weight: bold; font-size: 14px;")
-
-        # Update detailed status information
-        self.internet_label.setText("Yes" if self.connection_details.get('internet', False) else "No")
-        self.vpn_label.setText("Yes" if self.connection_details.get('vpn', False) else "No")
-
-        # Update last message time
-        last_message = self.connection_details.get('last_message')
-        if last_message:
-            from datetime import datetime
-            time_str = datetime.fromtimestamp(last_message).strftime('%H:%M:%S')
-            self.last_message_label.setText(time_str)
-        else:
-            self.last_message_label.setText("Never")
-
-        # Update reconnect attempts
-        reconnect_attempts = self.connection_details.get('reconnect_attempts', 0)
-        self.reconnect_attempts_label.setText(str(reconnect_attempts))
-
-    def _on_reconnect_clicked(self):
-        """Handle reconnect button click."""
-        self.reconnect_clicked.emit()
 
     def update_latency(self):
         """Update the latency display with random values for testing."""
