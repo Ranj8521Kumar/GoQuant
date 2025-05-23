@@ -170,3 +170,5 @@
 2025-05-20 13:14:15,629 - ui_app - INFO - Input parameters changed: {'exchange': 'OKX', 'asset': 'BTC-USDT', 'order_type': 'Market', 'quantity': 100.0, 'volatility': 0.34, 'fee_tier': 'VIP0'}
 2025-05-20 13:14:15,868 - ui_app - INFO - Input parameters changed: {'exchange': 'OKX', 'asset': 'BTC-USDT', 'order_type': 'Market', 'quantity': 100.0, 'volatility': 0.34, 'fee_tier': 'VIP0'}
 2025-05-20 13:14:16,061 - ui_app - INFO - Input parameters changed: {'exchange': 'OKX', 'asset': 'BTC-USDT', 'order_type': 'Market', 'quantity': 100.0, 'volatility': 0.34, 'fee_tier': 'VIP0'}
+2025-05-20 13:22:52,662 - ui_app - INFO - Input parameters changed: {'exchange': 'OKX', 'asset': 'BTC-USDT', 'order_type': 'Market', 'quantity': 100.0, 'volatility': 0.34, 'fee_tier': 'VIP0'}
+2025-05-20 13:26:33,326 - ui_app - INFO - Input parameters changed: {'exchange': 'OKX', 'asset': 'BTC-USDT', 'order_type': 'Market', 'quantity': 100.0, 'volatility': 0.3, 'fee_tier': 'VIP0'}

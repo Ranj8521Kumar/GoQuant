@@ -1,0 +1,3 @@
+2025-05-23 23:38:16,938 - ui_app - INFO - Input parameters changed: {'exchange': 'OKX', 'asset': 'ETH-USDT', 'order_type': 'Market', 'quantity': 100.0, 'volatility': 0.3, 'fee_tier': 'VIP0'}
+2025-05-23 23:38:21,236 - ui_app - INFO - Input parameters changed: {'exchange': 'OKX', 'asset': 'BTC-USDT', 'order_type': 'Market', 'quantity': 100.0, 'volatility': 0.3, 'fee_tier': 'VIP0'}
+2025-05-23 23:38:50,837 - ui_app - INFO - Input parameters changed: {'exchange': 'OKX', 'asset': 'BTC-USDT', 'order_type': 'Market', 'quantity': 100.0, 'volatility': 0.3, 'fee_tier': 'VIP0'}

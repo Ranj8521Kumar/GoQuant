@@ -12,27 +12,45 @@ The application connects to WebSocket endpoints that stream L2 orderbook data,
 processes this data in real-time, and uses it to simulate trades with various
 parameters to estimate transaction costs and market impact.
 """
+# Import for async operations and WebSocket handling
 import asyncio
+# Import for multi-threading support
 import threading
+# Import for time-related operations
 import time
+# Import for JSON data handling
 import json
+# Import type hints
 from typing import Dict, Any, Optional
+# Import for datetime operations
 from datetime import datetime
 
+# Import data manipulation libraries
 import pandas as pd
 import numpy as np
 
+# Import custom WebSocket client and data structures
 from websocket_client import WebSocketClient, OrderbookData
+# Import market impact model
 from models.market_impact import AlmgrenChrissModel
+# Import slippage estimation models
 from models.slippage import LinearRegressionSlippageModel, QuantileRegressionSlippageModel
+# Import maker/taker prediction model
 from models.maker_taker import MakerTakerModel
+# Import fee calculation model
 from models.fee import FeeModel
+# Import UI components
 from ui.app import SimulatorApp
+# Import logging utilities
 from utils.logger import setup_logger
+# Import performance tracking utilities
 from utils.performance import performance_tracker
+# Import connection management utilities
 from utils.connection_manager import ConnectionManager
+# Import configuration settings
 import config
 
+# Initialize logger for this module
 logger = setup_logger("main")
 
 class TradeSimulator:
