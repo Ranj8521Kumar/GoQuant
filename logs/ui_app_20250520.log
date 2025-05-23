@@ -161,3 +161,12 @@
 2025-05-20 13:03:16,730 - ui_app - INFO - Reconnect button clicked
 2025-05-20 13:05:59,697 - ui_app - INFO - Reconnect button clicked
 2025-05-20 13:08:15,998 - ui_app - INFO - Reconnect button clicked
+2025-05-20 13:12:12,881 - ui_app - INFO - Input parameters changed: {'exchange': 'OKX', 'asset': 'BTC-USDT', 'order_type': 'Market', 'quantity': 100.0, 'volatility': 0.3, 'fee_tier': 'VIP0'}
+2025-05-20 13:12:45,239 - ui_app - INFO - Input parameters changed: {'exchange': 'OKX', 'asset': 'BTC-USDT', 'order_type': 'Market', 'quantity': 100.0, 'volatility': 0.31, 'fee_tier': 'VIP0'}
+2025-05-20 13:12:45,745 - ui_app - INFO - Input parameters changed: {'exchange': 'OKX', 'asset': 'BTC-USDT', 'order_type': 'Market', 'quantity': 100.0, 'volatility': 0.32, 'fee_tier': 'VIP0'}
+2025-05-20 13:12:45,909 - ui_app - INFO - Input parameters changed: {'exchange': 'OKX', 'asset': 'BTC-USDT', 'order_type': 'Market', 'quantity': 100.0, 'volatility': 0.33, 'fee_tier': 'VIP0'}
+2025-05-20 13:12:46,112 - ui_app - INFO - Input parameters changed: {'exchange': 'OKX', 'asset': 'BTC-USDT', 'order_type': 'Market', 'quantity': 100.0, 'volatility': 0.34, 'fee_tier': 'VIP0'}
+2025-05-20 13:14:15,014 - ui_app - INFO - Input parameters changed: {'exchange': 'OKX', 'asset': 'BTC-USDT', 'order_type': 'Market', 'quantity': 100.0, 'volatility': 0.34, 'fee_tier': 'VIP0'}
+2025-05-20 13:14:15,629 - ui_app - INFO - Input parameters changed: {'exchange': 'OKX', 'asset': 'BTC-USDT', 'order_type': 'Market', 'quantity': 100.0, 'volatility': 0.34, 'fee_tier': 'VIP0'}
+2025-05-20 13:14:15,868 - ui_app - INFO - Input parameters changed: {'exchange': 'OKX', 'asset': 'BTC-USDT', 'order_type': 'Market', 'quantity': 100.0, 'volatility': 0.34, 'fee_tier': 'VIP0'}
+2025-05-20 13:14:16,061 - ui_app - INFO - Input parameters changed: {'exchange': 'OKX', 'asset': 'BTC-USDT', 'order_type': 'Market', 'quantity': 100.0, 'volatility': 0.34, 'fee_tier': 'VIP0'}

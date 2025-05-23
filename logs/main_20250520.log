@@ -457,3 +457,38 @@
 2025-05-20 13:08:26,659 - main - INFO - Connection status changed: Connected
 2025-05-20 13:08:43,404 - main - INFO - Connection status changed: VPN Connected
 2025-05-20 13:08:46,608 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:12:07,268 - main - INFO - Starting trade simulator
+2025-05-20 13:12:07,978 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:12:07,989 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:12:08,064 - main - INFO - Connection status changed: Connecting...
+2025-05-20 13:12:09,615 - main - INFO - Connection status changed: Connected
+2025-05-20 13:12:10,526 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 13:12:10,594 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 13:12:12,882 - main - WARNING - No orderbook data available for OKX_BTC-USDT
+2025-05-20 13:12:15,676 - main - INFO - Connection status changed: Connecting...
+2025-05-20 13:12:16,917 - main - INFO - Connection status changed: Connected
+2025-05-20 13:12:38,103 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:12:45,241 - main - WARNING - No orderbook data available for OKX_BTC-USDT
+2025-05-20 13:12:45,746 - main - WARNING - No orderbook data available for OKX_BTC-USDT
+2025-05-20 13:12:45,910 - main - WARNING - No orderbook data available for OKX_BTC-USDT
+2025-05-20 13:12:46,113 - main - WARNING - No orderbook data available for OKX_BTC-USDT
+2025-05-20 13:12:57,334 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 13:12:57,409 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 13:13:02,486 - main - INFO - Connection status changed: Connecting...
+2025-05-20 13:13:03,720 - main - INFO - Connection status changed: Connected
+2025-05-20 13:13:08,296 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:13:38,463 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:13:44,106 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 13:13:44,180 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 13:13:49,287 - main - INFO - Connection status changed: Connecting...
+2025-05-20 13:13:50,652 - main - INFO - Connection status changed: Connected
+2025-05-20 13:14:08,663 - main - INFO - Connection status changed: VPN Connected
+2025-05-20 13:14:15,015 - main - WARNING - No orderbook data available for OKX_BTC-USDT
+2025-05-20 13:14:15,630 - main - WARNING - No orderbook data available for OKX_BTC-USDT
+2025-05-20 13:14:15,872 - main - WARNING - No orderbook data available for OKX_BTC-USDT
+2025-05-20 13:14:16,062 - main - WARNING - No orderbook data available for OKX_BTC-USDT
+2025-05-20 13:14:31,041 - main - INFO - Connection status changed: Connection Closed
+2025-05-20 13:14:31,111 - main - INFO - Connection status changed: Reconnecting...
+2025-05-20 13:14:36,186 - main - INFO - Connection status changed: Connecting...
+2025-05-20 13:14:37,266 - main - INFO - Connection status changed: Connected
+2025-05-20 13:14:38,818 - main - INFO - Connection status changed: VPN Connected
