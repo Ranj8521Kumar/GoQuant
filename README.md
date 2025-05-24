@@ -229,7 +229,7 @@ GoQuant/
 ## 📚 Documentation
 
 ### Comprehensive Model Documentation
-- **[MODELS_AND_ALGORITHMS.md](MODELS_AND_ALGORITHMS_Documentation.md)**: Complete mathematical foundations and implementation details
+- **[MODELS_AND_ALGORITHMS_Documentation.md](MODELS_AND_ALGORITHMS_Documentation.md)**: Complete mathematical foundations and implementation details
 - **Code Comments**: Detailed inline documentation
 - **Type Hints**: Full type annotation for better code clarity
 - **Docstrings**: Comprehensive function and class documentation
