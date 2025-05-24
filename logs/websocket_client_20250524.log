@@ -1,0 +1,5 @@
+2025-05-24 14:12:02,008 - websocket_client - INFO - Connecting to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-24 14:12:02,157 - websocket_client - INFO - Connection status changed: VPN Connected
+2025-05-24 14:12:02,159 - websocket_client - INFO - Connection status changed: VPN Connected
+2025-05-24 14:12:03,415 - websocket_client - INFO - Connected to wss://ws.gomarket-cpp.goquant.io/ws/l2-orderbook/okx/BTC-USDT-SWAP
+2025-05-24 14:12:32,397 - websocket_client - INFO - Connection status changed: VPN Connected

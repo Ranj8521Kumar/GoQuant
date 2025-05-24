@@ -1,0 +1,7 @@
+2025-05-24 14:12:00,820 - main - INFO - Starting trade simulator
+2025-05-24 14:12:02,157 - main - INFO - Connection status changed: VPN Connected
+2025-05-24 14:12:02,159 - main - INFO - Connection status changed: VPN Connected
+2025-05-24 14:12:02,245 - main - INFO - Connection status changed: Connecting...
+2025-05-24 14:12:03,416 - main - INFO - Connection status changed: Connected
+2025-05-24 14:12:10,313 - main - WARNING - No orderbook data available for OKX_BTC-USDT
+2025-05-24 14:12:32,397 - main - INFO - Connection status changed: VPN Connected

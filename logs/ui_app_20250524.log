@@ -1,0 +1,1 @@
+2025-05-24 14:12:10,312 - ui_app - INFO - Input parameters changed: {'exchange': 'OKX', 'asset': 'BTC-USDT', 'order_type': 'Market', 'quantity': 100.0, 'volatility': 0.3, 'fee_tier': 'VIP0'}
