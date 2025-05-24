@@ -2,7 +2,7 @@
 
 A sophisticated, real-time trade simulator that leverages live market data to estimate transaction costs and market impact for cryptocurrency trading. Built with advanced quantitative models and a modern PyQt5 interface.
 
-![Trade Simulator UI](ui_screenshot.png)
+![Trade Simulator UI](https://github.com/user-attachments/assets/192db413-18c6-45c4-990f-ce05c9d44d65)
 
 ## 🚀 Features
 
